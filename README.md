@@ -43,7 +43,7 @@ use VirCom\ApachePDFBox\ApachePDFBoxServiceFactory;
 $service = (new ApachePDFBoxServiceFactory())
     ->createService(
         '/path/to/java/interpreter',
-        '/path/to/apache/pdfbox/binary/file/pdfbox-app-2.0.9.jarg'
+        '/path/to/apache/pdfbox/binary/file/pdfbox-app-2.0.9.jar'
     );
 ```
 
