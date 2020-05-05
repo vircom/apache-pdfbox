@@ -43,7 +43,7 @@ use VirCom\ApachePDFBox\ApachePDFBoxServiceFactory;
 $service = (new ApachePDFBoxServiceFactory())
     ->createService(
         '/path/to/java/interpreter',
-        '/path/to/apache/pdfbox/binary/file/pdfbox-app-2.0.9.jarg'
+        '/path/to/apache/pdfbox/binary/file/pdfbox-app-2.0.9.jar'
     );
 ```
 
@@ -58,7 +58,7 @@ $service->execute(
     ))
     ->setAlias('alias') // The alias of the key in the certificate file (mandatory if several keys are available)
     ->setKeyStore('/path/to/certificate/file') // The KeyStore that holds the certificate
-    ->setPassword('password'); // The password to open the certificate and extract the private key from it
+    ->setPassword('password') // The password to open the certificate and extract the private key from it
 );
 ```
 
@@ -82,7 +82,7 @@ $servce->execute(
     ->setCanModifyAnnotations() // Set the modify annots permission
     ->setCanPrint() //  Set the print permission
     ->setCanPrintDegraded() // Set the print degraded permission
-    ->setKeyLength(40 / 128 / 256); // The length of the key in bits (valid values: 40, 128 or 256 default is 40)
+    ->setKeyLength(40 / 128 / 256) // The length of the key in bits (valid values: 40, 128 or 256 default is 40)
 );
 ```
 
