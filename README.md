@@ -66,7 +66,7 @@ $service->execute(
 ```php
 use VirCom\ApachePDFBox\Command\EncryptCommand;
 
-$servce->execute(
+$service->execute(
     (new EncryptCommand(
         '/path/to/input/pdf/file.pdf',
         '/path/to/output/pdf/file.pdf'
@@ -90,7 +90,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\ExtractImagesCommand;
 
-$servce->execute(
+$service->execute(
     (new ExtractImagesCommand(
         '/path/to/input/pdf/file.pdf'
     ))
@@ -104,7 +104,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\ExtractTextCommand;
 
-$servce->execute(
+$service->execute(
     (new ExtractTextCommand(
         '/path/to/input/pdf/file.pdf',
         '/path/to/output/pdf/file.pdf'
@@ -125,7 +125,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\OverlayPDFCommand;
 
-$servce->execute(
+$service->execute(
     (new OverlayPDFCommand(
         '/path/to/input/pdf/file.pdf',
         '/path/to/output/pdf/file.pdf',
@@ -145,7 +145,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\PDFMergerCommand;
 
-$servce->execute(
+$service->execute(
     (new PDFMergerCommand(
         [
             '/path/to/input/pdf/file1.pdf',
@@ -160,7 +160,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\PDFSplitCommand;
 
-$servce->execute(
+$service->execute(
     (new PDFSplitCommand(
         '/path/to/input/pdf/file.pdf'
     ))
@@ -176,7 +176,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\PDFToImageCommand;
 
-$servce->execute(
+$service->execute(
     (new PDFToImageCommand(
         '/path/to/input/pdf/file.pdf'
     ))
@@ -197,7 +197,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\TextToPDFCommand;
 
-$servce->execute(
+$service->execute(
     (new TextToPDFCommand(
         '/path/to/input/text/file.txt',
         '/path/to/overlay/pdf/file.pdf'
@@ -214,7 +214,7 @@ $servce->execute(
 ```php
 use VirCom\ApachePDFBox\Command\WriteDecodedDocCommand;
 
-$servce->execute(
+$service->execute(
     (new WriteDecodedDocCommand(
         '/path/to/input/pdf/file.pdf',
         '/path/to/output/doc/file.doc'
